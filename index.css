@@ -1,0 +1,104 @@
+/* layout */
+
+body {
+    margin: auto;
+    font-family: "Smythe", system-ui;
+    line-height: 24px;
+    max-width: 600px;
+    /* letter-spacing: 0%; */
+    /* text-align: center; */
+    border: solid red 1px;
+    /* background-color: #1b4730; */
+}
+
+header {
+    background: no-repeat url("/images/Main.png");
+    height: 167px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+/* typography and icons */
+
+h1{
+    font-size: 39px;
+    margin-top: 46px;
+}
+
+h2{
+    margin-top: -19px;
+    font-size: 22.42px;
+}
+
+h1, h2{
+    color: white;
+    -webkit-text-stroke: 0.5px #273633; 
+    margin-left: 46px;
+}
+
+h3,h4,p{
+    margin: 0;
+}
+
+p {
+    color: #8B8B8B;
+}
+
+/* Item */
+
+.items{
+    margin-top: 67px;
+}
+
+.item{
+    margin: auto;
+    max-width: 508px;
+    height: 140px;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: solid #D2D2D2 1px;
+}
+
+.itemDetails{
+    /* border: solid red 1px; */
+    margin: auto;
+}
+
+.item h1{
+    /* border: solid red 1px; */
+    font-size: 78px;
+
+}
+
+button{
+    background: none;
+    border: 1px solid #DEDEDE;
+    -webkit-text-stroke: 0.5px white; 
+    height: 50px; 
+    width: 50px;
+    margin: auto;
+    border-radius: 50%;
+    font-size: 32px;
+
+}
+
+button:hover{
+    background: #DEDEDE;
+
+}
+
+/* Order Resume */
+
+.orderResume{
+    margin: auto;
+    margin-top: 45px;
+    max-width: 508px;
+    text-align: center;
+    border: 1px solid red;
+}
+
+.yourordertext{
+    margin-bottom: 64px;
+    font-size: 100px;
+}
