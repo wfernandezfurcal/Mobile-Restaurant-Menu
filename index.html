@@ -32,21 +32,12 @@
                     </div>
                     <button class="addItemBtn">+</button>
                  </div>
-                 <div class="item" id="item">
-                    <h1 class="foodIcon">🌭</h1>
-                    <div class="itemDetails" id="itemDetails">
-                        <h3>Pizza</h3>
-                        <p>peperoni,mushrom,mozarella</p>
-                        <h4>$14</h4>
-                    </div>
-                    <button class="addItemBtn">+</button>
-                 </div>
             </div>
         </main>
         <footer>
             <div class="orderResume" id="orderResume">
                 <h3 id="youOrderText">Your order</h3>
-                <div class="orderItems">
+                <div class="orderItems" id="orderItems">
                     <div class="orderItem" id="orderItem" >
                         <div>
                             <h3>Pizza</h3>
@@ -69,6 +60,32 @@
                 <button class="completeOrderBtn">Complete order</button>
             </div>
         </footer>
-	<script src="index.js"></script>
+        <div class="paymentDetailsModal hidden">
+            <form>
+                <h3>Enter card details</h3>
+                <input type="text" 
+                placeholder="Enter your name"    
+                name="name"             
+                required>
+                <input type="text"
+                inputmode="numeric"
+                pattern="[0-9]*"
+                placeholder="Enter card number" 
+                minlength="16"
+                maxlength="16"
+                name="card-number"
+                required>
+                <input type="text" 
+                inputmode="numeric"
+                pattern="[0-9]*"
+                placeholder="Enter CVV" 
+                maxlength="3"
+                minlength="3"
+                name="cvv"
+                required>
+                <button class="payBtn" id="payBtn">Pay</button>
+            </form>
+        </div>
+	<script src="index.js" type="module"></script>
     </body>
 </html>
