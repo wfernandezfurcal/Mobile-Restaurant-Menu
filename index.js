@@ -5,23 +5,22 @@ import { v4 as uuidv4 } from 'https://jspm.dev/uuid';
 const itemsArr = document.getElementById("items")
 const orderItems = document.getElementById("orderItems")
 const totalPrice = document.getElementById("totalPrice")
+const orderResumeModal = document.getElementById("orderResume")
 
 let orderResume = [];
 
 document.addEventListener("click",function(e){
     if(e.target.classList[0] == 'addItemBtn'){
+        orderResume.length == 0 && orderResumeModal.classList.toggle('hidden')
         addItemToOrder(e.target.id)
     }
     else if (e.target.classList[0] == 'removeBtn'){
         removeOrderItem(e.target.id)
+        orderResume.length == 0 && orderResumeModal.classList.toggle('hidden')
     }
 })
 
 function addItemToOrder(itemId){
-
-    //orderResume == [] && 
-    //document.getElementById("orderResume").classList.toggle('hidden')
-
     const itemSelected = menuArray.filter( item => item.id == itemId)[0]
     orderResume.push({
         "name": itemSelected.name,
