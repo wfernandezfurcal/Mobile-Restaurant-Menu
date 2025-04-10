@@ -14,28 +14,10 @@
         <main>
             <div class="items" id="items">
                 <!-- Items here!! -->
-                 <div class="item" id="item">
-                    <h1 class="foodIcon">🌭</h1>
-                    <div class="itemDetails" id="itemDetails">
-                        <h3>Pizza</h3>
-                        <p>peperoni,mushrom,mozarella</p>
-                        <h4>$14</h4>
-                    </div>
-                    <button class="addItemBtn">+</button>
-                 </div>
-                 <div class="item" id="item">
-                    <h1 class="foodIcon">🌭</h1>
-                    <div class="itemDetails" id="itemDetails">
-                        <h3>Pizza</h3>
-                        <p>peperoni,mushrom,mozarella</p>
-                        <h4>$14</h4>
-                    </div>
-                    <button class="addItemBtn">+</button>
-                 </div>
             </div>
         </main>
         <footer>
-            <div class="orderResume" id="orderResume">
+            <div class="orderResume hidden" id="orderResume">
                 <h3 id="youOrderText">Your order</h3>
                 <div class="orderItems" id="orderItems">
                     <div class="orderItem" id="orderItem" >
@@ -55,7 +37,7 @@
                 </div>
                 <div class="orderTotal" id="orderTotal" >
                     <h3>Total price:</h3>
-                    <h4>$26</h4>
+                    <h4 id="totalPrice">$26</h4>
                 </div>
                 <button class="completeOrderBtn">Complete order</button>
             </div>
