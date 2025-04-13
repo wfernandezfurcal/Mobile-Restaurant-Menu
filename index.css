@@ -182,6 +182,24 @@ input{
     color: white;
 }
 
+/* Thanks for order panel */
+
+.thanksForOrderPanel{
+    margin: auto;
+    margin-top: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 504px;
+    height: 120px;
+    text-align: center;
+    background-color: #ECFDF5;
+}
+
+.thanksForOrderPanel h3{
+    font-size: 32;
+}
+
 /* utility */
 .hidden{
     display: none;
