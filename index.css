@@ -32,7 +32,7 @@ h2{
 
 h1, h2{
     color: white;
-    -webkit-text-stroke: 0.5px #273633; 
+    /* -webkit-text-stroke: 0.5px #273633;  */
     margin-left: 46px;
 }
 
